@@ -29,9 +29,11 @@ li{
     list-style: none;
 }
 
+/* ============================== */
 .container{
-    
+    max-width: 1200px;
 }
+/* ============================== */
 
 @media screen and (min-width: 1200px) and (max-width:1400px) {
     .container{
@@ -272,9 +274,15 @@ ul.tab__inner li:first-child{
     font-size: 12px;
 }
 
-.card__box.music__box .box__content h4 {
+.card__box.music__box .box__content h3 {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.card__box.music__box .box__content h4{
+    font-size: 16;
+    font-weight: 700;
     margin-bottom: 3px;
 }
 
@@ -450,7 +458,9 @@ button.accordion-button {
 /* =====accordion section end here===== */
 
 
-
+/* ===========================================
+        home page end here
+==============================================*/
 
 
 
@@ -469,7 +479,7 @@ button.accordion-button {
     justify-content: start;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--p--dark);
     margin-bottom: 20px;
 }
 
@@ -503,7 +513,7 @@ button.accordion-button {
 }
 
 .experts .contents__send h3 {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -534,21 +544,21 @@ button.accordion-button {
     text-decoration: none;
     font-size: 16px;
     padding: 4px 14px;
-    border: 1px solid #000;
+    border: 1px solid var(--p--dark);
     display: inline-block;
-    color: #000;
+    color: var(--p--dark);
     border-radius: 20px;
     margin-bottom: 8px;        
 }
 
 .fed__btn a {
     display: block;
-    background: #000;
+    background: var(--p--dark);
     text-align: center;
     padding: 12px;
     font-size: 14px;
     font-weight: 700;
-    color: #fff;
+    color: var(--p--white);
     border-radius: 50px;
 }
 
@@ -565,7 +575,7 @@ button.accordion-button {
     position: absolute;
     top: 18px;
     right: 30px;
-    color: #fff;
+    color: var(--p--white);
     font-size: 24px;
     cursor: pointer;
     display: none;
@@ -624,7 +634,7 @@ button.accordion-button {
 }
 
 .highlight__image .highlight__content p {
-    color: #fff;
+    color: var(--p--white);
     font-size: 13px;
     font-weight: 700;
     margin-bottom: 5px;
@@ -651,4 +661,152 @@ button.accordion-button {
 
 /* ===========================================
         expert page end here
+==============================================*/
+
+
+/* ===========================================
+        users page start here
+==============================================*/
+.users__section{
+    background: linear-gradient(180deg, rgba(205, 252, 81, 0) 0%, #CDFC51 100%);
+    padding-bottom: 90px;
+}
+
+.user__profile {
+    padding-right: 60px;
+    text-align: left;
+}
+
+.user__profile .profile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.user__profile .profile > img {
+    height: 80px;
+    width: 82px;
+    border-radius: 50px;
+}
+
+.user__profile {
+    padding-right: 60px;
+    text-align: left;
+}
+
+.user__profile .profile .user__icon img {
+    width: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.user__profile .users__comment{
+    font-family: var(--p--font1);
+}
+
+.user__profile .users__comment h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.user__profile .users__comment p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 5px 0 20px;
+}
+
+.user__profile .users__social img {
+    height: 30px;
+    width: 30px;
+    padding: 4px;
+    background: var(--p--dark);
+    border-radius: 50px;
+    margin-right: 8px;
+}
+
+.users__accounts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 48px;
+}
+
+.users__accounts .user__acc {
+    width: 160px;
+    margin: 0 10px 10px 0;
+    position: relative;
+}
+
+.users__accounts .user__acc > img{
+    width: 100%;
+}
+
+.users__accounts .user__acc .users__content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-family: var(--p--font1);
+}
+
+.users__accounts .user__acc .users__content img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.users__accounts .user__acc .users__content p, .users__accounts .user__acc .users__content a {
+    font-size: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.users__accounts .user__acc .users__content a{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1199px) {
+    .users__accounts, .user__profile{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .user__profile{
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .users__accounts .user__acc:nth-child(2),
+     .users__accounts .user__acc:nth-child(4),
+      .users__accounts .user__acc:nth-child(6),
+       .users__accounts .user__acc:nth-child(8){
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:353px) {
+    .users__accounts .user__acc{
+        width: 125px;
+    }
+
+    .users__accounts .user__acc .users__content{
+        left: 5px;
+    }
+
+    .users__accounts .user__acc .users__content p,
+     .users__accounts .user__acc .users__content a{
+        font-size: 8px;
+    }
+}
+
+/* ===========================================
+        users page start here
 ==============================================*/
