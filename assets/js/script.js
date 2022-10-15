@@ -58,3 +58,28 @@
 // swap(a, b)
 
 // console.log('After swap: value of a: ' + a + ' and value of b: ' + b)
+
+// =====
+
+var mObj = {
+    a : 10,
+    b : 20
+}
+
+console.log('Before swap the value of a: ' + mObj.a + ' and value of b: ' + mObj.b)
+
+function swap(x){
+    console.log('Before swap inside function value of a: ' + x.a + ' and value of b: ' + x.b)
+
+    var temp = x.a
+
+    x.a = x.b
+    x.b = temp
+
+    console.log('After swap inside function value of a: ' + x.a + ' and value of b: ' + x.b)
+}
+
+swap(mObj)
+
+console.log('After swap outside function value of a: '+ mObj.a + ' and value of b: ' + mObj.b) 
+console.log(mObj)

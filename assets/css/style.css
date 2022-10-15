@@ -43,6 +43,7 @@ li{
 
 :root{
     --p--general: #CDFC51;
+    --p--backG: linear-gradient(180deg, rgba(205, 252, 81, 0) 0%, #CDFC51 100%);
     --p--white: #fff;
     --p--dark: #000000;
     --p--bg: #f5f5f5;
@@ -85,6 +86,7 @@ li{
     background: #fff;
     border-radius: 13px;
     display: none;
+    z-index: 99;
 }
 
 .header__right .account .account__menu ul li {
@@ -144,6 +146,10 @@ li{
 
     .header__right .menubar{
         display: block;
+    }
+
+    .header__right .account .account__menu ul{
+        right: 0;
     }
 }
 /* =====header section end here===== */
@@ -326,7 +332,7 @@ ul.tab__inner li:first-child{
 
 @media screen and (max-width: 575px) {
     .music__class{
-        background: linear-gradient(180deg, rgba(205, 252, 81, 0) 0%, #CDFC51 100%);
+        background: var(--p--backG);
     }
 }
 
@@ -483,6 +489,18 @@ button.accordion-button {
     margin-bottom: 20px;
 }
 
+.expert__header .exp__img {
+    position: relative;
+}
+
+.expert__header .exp__img img:last-child {
+    position: absolute;
+    left: 71%;
+    bottom: -2px;
+    display: none;
+    border-radius: unset;
+}
+
 .expert__header img {
     border-radius: 50%;
     margin-right: 10px;
@@ -605,6 +623,13 @@ button.accordion-button {
     .highlight__section .footer__inner{
         padding-top: 40px;
     }
+}
+
+@media screen and (max-width: 374px) {
+    
+    .expert__header .exp__img img:last-child {
+        display: block;
+    } 
 }
 
 /* =====expert section start here =====*/
@@ -792,6 +817,7 @@ button.accordion-button {
     }
 }
 
+
 @media screen and (max-width:353px) {
     .users__accounts .user__acc{
         width: 125px;
@@ -809,4 +835,117 @@ button.accordion-button {
 
 /* ===========================================
         users page start here
+==============================================*/
+
+
+/* ===========================================
+        login page start here
+==============================================*/
+.login__section{
+    background: var(--p--backG);
+    height: 85vh;
+}
+
+form.login__form {
+    max-width: 360px;
+    margin: auto;
+    padding: 16px;
+    text-align: center;
+}
+
+form.login__form input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #000;
+    padding: 16px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+form.login__form a.forgot_pass {
+    text-align: end;
+    display: block;
+    font-size: 13px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    color: var(--p--dark);
+}
+
+form.login__form button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 12px;
+    outline: none;
+    border: 1px solid var(--p--dark);
+    border-radius: 50px;
+    background: transparent;
+}
+
+form.login__form button.signUp_btn{
+    background-color: var(--p--dark);
+    color: var(--p--white);
+}
+
+form.login__form .login__google {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form.login__form .login__google a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 48%;
+    padding: 12px;
+    border: 1px solid var(--p--dark);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--p--dark);
+}
+
+.signUp__inner{
+    display: none;
+}
+
+.signUp__content .s__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signUp__content .s__content p img {
+    margin-right: 12px;
+}
+
+.signUp__content .s__content:first-child {
+    font-size: 18px;
+    color: #b7b3b3;
+    margin-bottom: 15px;
+}
+
+.signUp__content .s__content {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.signUp__content .s__content:last-child{
+    margin-top: 15px;
+    color: #b7b3b3;
+}
+
+button.signUp_btn {
+    margin-top: 40px;
+}
+
+
+/* ===========================================
+        login page start here
 ==============================================*/
