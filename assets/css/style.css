@@ -47,9 +47,11 @@ li{
     --p--white: #fff;
     --p--dark: #000000;
     --p--bg: #f5f5f5;
+    --p--home: #eeeeee;
     --p--tran1: 0.2s ease-in-out;
     --p--font1:  Arial, Helvetica, sans-serif;
     --p--font2: 'Noto Sans', sans-serif;
+    --p--radius: 20px;
 }
 
 /* =====header section start here===== */
@@ -142,11 +144,7 @@ li{
 
     .header__inner{
         padding-bottom: 15px;
-    }
-
-    .header__right .menubar{
-        display: block;
-    }
+    }     
 
     .header__right .account .account__menu ul{
         right: 0;
@@ -156,7 +154,7 @@ li{
 
 
 /* =====banner section start here===== */
-.banner__section{
+.banner{
     height: 557px;
     background-color: var(--p--general);
 }
@@ -190,7 +188,8 @@ li{
 
 @media screen and (max-width: 575px) {
     .banner__section{
-        height: 500px;
+        /* height: 500px; */
+        padding-bottom: 20px;
     }
 
     .banner__inner p {
@@ -207,7 +206,6 @@ li{
 
 ul.tab__inner{
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -242,13 +240,6 @@ ul.tab__inner li:first-child{
 
 
 /* =====music class section start here===== */
-/* .music__inner {
-    margin: 60px 0;
-}
-
-.music__inner:first-child {
-    margin: 0 0 60px 0;
-} */
 
 .card__box.music__box{
     position: relative;
@@ -262,10 +253,10 @@ ul.tab__inner li:first-child{
 /* --- */
 .card__box.music__box .box__content {
     position: absolute;
-    bottom: 15px;
-    left: 20px;
+    bottom: 46px;
+    left: 15px;
     color: #fff;
-    right: 20px;
+    right: 15px;
     font-family: var(--p--font1);
 }
 
@@ -293,15 +284,28 @@ ul.tab__inner li:first-child{
 }
 
 .card__box.music__box .box__content p{
-    font-size: 18px;
+    font-size: 12px;
     font-family: inherit;
     line-height: 22px;
+    text-transform: uppercase;
+}
+
+.card__box.music__box .box__content a {
+    font-size: 16px;
+    color: #000;
+    background: #fff;
+    display: block;
+    width: 122px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 50px;
+    margin-top: 20px;
 }
 /* --- */
 
 .card__box.music__box.optional__box{
-    /* width: 228px; */
-    width: 230px;
+    width: 228px;
+    /* width: 224px; */
 }
 
 .card__box.music__box.optional__box .box__content {
@@ -315,24 +319,40 @@ ul.tab__inner li:first-child{
     font-size: 10px;
 }
 
-.card__box.music__box.optional__box .box__content h4 {
-    font-size: 16px;
-}
-
 .card__box.music__box.optional__box .box__content p{
-    font-size: 16px;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 /* --- */
 
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
+@media screen and (min-width: 1200px) {
+    .card__box.music__box {
+        height: 520px;
+    }
+
+    .card__box.music__box img {
+        height: 100%;
+    }
+
+    .card__box.music__box.optional__box img {
+        height: 280px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+
     .card__box.music__box.optional__box{
-        width: 210px;
+        width: 220px;
     }
 }
 
 @media screen and (max-width: 575px) {
     .music__class{
         background: var(--p--backG);
+    }
+
+    .card__box.music__box {
+        margin-bottom: 16px;
     }
 }
 
@@ -343,19 +363,28 @@ ul.tab__inner li:first-child{
 }
 
 @media screen and (max-width: 424px) {
-    .card__box.music__box .box__content p{
-        font-size: 16px;
+
+    .card__box.music__box .box__content {
+        bottom: 15px;
     }
+
+    .card__box.music__box .box__content a{
+        font-size: 14px;
+    }
+
+    /* .card__box.music__box {
+        margin-bottom: 16px;
+    } */
 }
 
 @media screen and (max-width: 360px) {
-    .card__box.music__box .box__content p{
+    /* .card__box.music__box .box__content p{
         font-size: 15px;
-    }
+    } */
 
-    .card__box.music__box .box__content h4{
+    /* .card__box.music__box .box__content h4{
         font-size: 16px;
-    }
+    } */
 }
 /* =====music class section end here===== */
 
@@ -949,3 +978,305 @@ button.signUp_btn {
 /* ===========================================
         login page start here
 ==============================================*/
+
+
+/* ===========================================
+        home page start here
+==============================================*/
+.world__icon {
+    cursor: pointer;
+    margin-left: 28px;
+}
+
+.account.home__account a img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+}
+
+.home__header__menu {
+    margin-left: 62px;
+    margin-top: 10px;
+}
+
+.home__header__menu ul li {
+    margin-right: 40px;
+}
+
+.home__header__menu ul li:last-child {
+    margin-right: 0;
+}
+
+.home__header__menu ul li a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+@media screen and (max-width: 767px) {
+    .menubar.home__menu {
+        display: block;
+    }
+
+    .header__right .account, .world__icon{
+        margin-left: 18px;
+    } 
+    
+    .menubar.home__menu span {
+        width: 25px;
+    }
+
+    .home__header__menu{
+        display: none;
+    }
+
+    .header__right .menubar{
+        margin-left: 18px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+.home__body{
+    background-color: var(--p--home);
+}
+
+.banner.home__banner {
+    background: transparent;
+}
+
+.model__type{
+    padding-bottom: 40px;
+}
+
+.modelters__title {
+    margin-bottom: 12px;
+}
+
+.modelters__title h3 {
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.modelters__title a{
+    color:var(--p--dark);
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.model__type .models__body img {
+    width: 100%;
+    height: 250px;
+    border-radius: var(--p--radius);
+}
+
+.models__body .models__content {
+    margin-top: 32px;
+}
+
+.models__body .models__content .top {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.models__body .models__content .top p:last-child,  .card__box.home__card .box__top p:last-child {
+    margin-left: 25px;
+    text-transform: unset;
+    font-size: 14px;
+}
+
+.card__box.home__card.music__box.optional__box{
+    height: unset;
+}
+
+.modelters__title h4{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.models__body .models__content .top p:first-child, .card__box.home__card .box__top p:first-child {
+    font-family: var(--p--font2);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: unset;
+}
+
+.models__body .models__content .content{
+    padding-right: 30px;
+}
+
+.models__body .models__content .content p, .card__box.home__card.music__box.optional__box .box__content p{
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.card__box.home__card.music__box.optional__box {
+    width: 224px;
+}
+
+@media screen and (max-width: 471px) {
+    .optional__class{
+        justify-content: center !important;
+    }
+
+    .modelters__title{
+        /* justify-content: space-evenly !important; */
+    }
+}
+
+
+/* ===========================================
+        home page start here
+==============================================*/
+
+
+/* ===========================================
+        FAQ section start here
+==============================================*/
+.FAQ__section{
+    font-family: var(--p--font2);
+    padding: 70px 0 115px;
+    /* background: linear-gradient(180deg, rgba(205, 252, 81, 0) 0%, #CDFC51 100%); */
+}
+
+.one__section{
+    background: linear-gradient(180deg, rgba(205, 252, 81, 0) 0%, #CDFC51 100%);
+}
+
+div#accordionFlushExample {
+    border: none;
+}
+
+.accordion-item.FAQ__item {
+    margin: 0;
+    border-bottom: 1px solid rgba(16, 16, 16, 0.1);
+}
+
+.accordion-item.FAQ__item:last-child {
+    border-bottom: 1px solid rgba(16, 16, 16, 0.1);
+}
+
+button.accordion-button.FAQ__btn.collapsed {
+    margin: 0;
+}
+
+button.accordion-button.FAQ__btn.collapsed, button.accordion-button.FAQ__btn {
+    height: 100px !important;
+    padding: 0 !important;
+}
+
+.home__collapse .accordion-body {
+    padding: 0  0 15px 0;
+}
+
+.FAQ__header h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 54px;
+    margin-bottom: 30px;
+}
+
+.accordion__title p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FF004F;
+    margin-bottom: 2px;
+}
+
+.accordion__title h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--p--dark);
+}
+
+.event__banner {
+    height: 586px;
+    padding: 40px;
+    border-radius: 20px;
+    background: var(--p--white);
+    position: relative;
+    max-width: 379px;
+    margin: auto;
+}
+
+.event__banner h2 {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 34px;
+}
+
+.event__banner p {
+    font-size: 14px;
+    line-height: 23px;
+    margin-top: 12px;
+}
+
+.event__banner a {
+    position: absolute;
+    bottom: 40px;
+    color: var(--p--dark);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .event__banner{
+        margin-top: 40px;
+    }
+}
+
+/* ===========================================
+        FAQ section end here
+==============================================*/
+
+.home__footer {
+    padding: 42px 0 100px;
+}
+
+.home__foot__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home__foot__inner ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home__foot__inner ul li {
+    margin-right: 20px;
+}
+
+.home__foot__inner ul li:hover a{
+    text-decoration: underline;
+}
+
+.home__foot__inner ul li a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000;
+}
+
+@media screen and (max-width: 424px) {
+    .home__foot__inner{
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+}
+
