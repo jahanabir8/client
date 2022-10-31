@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doje</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body class="home__body"> 
+
+    <!-- header section start here -->
+    <div class="header__section">
+        <div class="header__inner d-flex justify-content-between align-items-center border-1 border-bottom border-dark">
+        <div class="header__left">
+            <div class="logo">
+                <h2><a href="#">Doje</a></h2>
+            </div>
+        </div>
+        <div class="header__right d-flex justify-content-between align-items-center">
+            <div class="search">
+                <img src="assets/images/icon/search.svg" alt="icon">
+            </div>
+            <div class="account">
+                <a href="#"><img src="assets/images/icon/account.svg" alt="icon"></a>
+                <div class="account__menu">
+                    <ul>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menubar">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- header section end here -->
+
+
+    <!-- porcess section start here -->
+    <div class="process__section">
+        <div class="container">
+            <div class="process__inner">
+                <form class="login__form process__form">
+                    <a href="#"><img src="assets/images/icon/arrow_left.png" alt="icon"> </a> <br><br>
+                    <label class="text-start" for="name">What is your name?</label>
+                    <input type="name" placeholder="name">
+                    <!-- <input type="password" placeholder="Password"> -->
+                    <!-- <a href="#" class="forgot_pass">비밀번호 찾기</a>   -->
+                    <!-- <button class="login_btn">LOG IN</button> -->
+
+                    <div class="feedback" id="request__process">
+                        <p>Content you want to get feedback</p>
+                        <div class="feedback__pill d-flex flex-wrap justify-content-start">
+                            <a href="#">Original Sound</a>
+                            <a href="#">Beat & Hook</a>
+                            <a href="#">Question on Industry</a>
+                        </div>
+                    </div>
+
+                    <button class="signUp_btn d-flex justify-content-between align-items-center ps-3 pe-3">Next <img src="assets/images/icon/arrow_right.png" alt="image"></button>
+
+                    <!-- <div class="login__google">
+                        <a href="#"> <img src="assets/images/icon/google.svg" alt="icon"> GOOGLE</a>
+                        <a href="#"> <img src="assets/images/icon/google.svg" alt="icon"> GOOGLE</a>
+                    </div> -->
+                </form>
+
+                
+            </div>
+        </div>
+    </div>
+    <!-- porcess section start here -->
+
+
+    <!-- request section start here -->
+    <div class="request__section">
+        <div class="container">
+            <div class="request__inner">
+                 <a href="#"><img src="assets/images/icon/arrow_left.png" alt="icon"></a> <br><br>
+                 <div class="row flex-wrap-reverse">
+                    <div class="col-md-6">
+                        <div class="request__content">
+                            <div class="title">
+                                <h2>Songhee Hyun’s Music Class</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod,  consectetur adipisicing elit, sed do eiusmod
+                                </p>
+                            </div>
+                            <div class="content">
+                                <h4>CONTENTS GUIDLINE</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod,  consectetur adipisicing elit, sed do eiusmod
+                                </p>
+                            </div>
+                            <div class="content">
+                                <h4>RECOMMENDATION</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod,  consectetur adipisicing elit, sed do eiusmod
+                                </p>
+                            </div>
+                            <div class="title">
+                                <h2>Songhee Hyun’s Music Class</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod,  consectetur adipisicing elit, sed do eiusmod
+                                </p>
+                            </div>
+                            <div class="content">
+                                <h4>CONTENTS GUIDLINE</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod,  consectetur adipisicing elit, sed do eiusmod
+                                </p>
+                            </div>
+                            <div class="content">
+                                <h4>RECOMMENDATION</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod,  consectetur adipisicing elit, sed do eiusmod
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="select__file"> 
+                            <div class="wrapper">
+                                <form class="login__form process__form upload__form">
+                                    <!-- <h1>Beautiful CSS-Only File Inputs</h1>
+                                    <p>Create beautifully designed, CSS-only, semantic and accessible file upload buttons with the <code>label</code> element.</p> -->
+                                        
+                                    <input type="file" id="file" />
+                                    <label class="text-center" for="file"> <p>CHOOSE FILE</p> <br> <span>upto 2GB</span> </label>
+                                
+                                    <textarea name="question" id="question" placeholder="Add a question or context (optional)"></textarea>
+                                        
+                                    
+                                </form>     
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <form class="login__form next__button">
+                    <button class="signUp_btn d-flex justify-content-between align-items-center ps-3 pe-3">Next <img src="assets/images/icon/arrow_right.png" alt="image"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- request section end here -->
+
+
+    <!-- payment section start here -->
+    <div class="payment__section">
+        <div class="container">
+            <div class="payment__inner">
+                <div class="row flex-wrap-reverse">
+                    <div class="col-md-6">
+                        <div class="request__content payment__content">
+                            <div class="title">
+                                <h2>Songhee Hyun’s Music Class</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod,  consectetur adipisicing elit, sed do eiusmod
+                                </p>
+                            </div>
+                            <div class="content">
+                                <h4>PERSONAL FEEDBACK</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod,  consectetur adipisicing elit, sed do eiusmod
+                                </p>
+                            </div>
+                            <div class="content">
+                                <h4>PAYMENT POLICY</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod,  consectetur adipisicing elit, sed do eiusmod
+                                </p>
+                            </div>
+                            <div class="content">
+                                <h4>PRIVACY POLICY</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod,  consectetur adipisicing elit, sed do eiusmod
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="play__payment">
+                            <img src="assets/images/section/MaskGroup.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+
+                <form class="login__form next__button">
+                    <button class="signUp_btn d-flex justify-content-between align-items-center ps-3 pe-3">Next <img src="assets/images/icon/arrow_right.png" alt="image"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- payment section end here -->
+
+
+    <!-- B12 section start here -->
+    <div class="B12__section">
+        <div class="container">
+            <div class="B12__inner">
+                 <div class="B12__finance">
+                    <div class="first__step">
+                        <h4>결제 금액을 확인해주세요.</h4>
+                        <div class="finance">
+                            <p>상품</p>
+                            <p>축가</p>
+                        </div>
+                        <div class="finance">
+                            <p>금액</p>
+                            <p>금액</p>
+                        </div>
+                        <div class="finance">
+                            <p>할인/혜택</p>
+                            <p>- 0원</p>
+                        </div>
+                        <hr>
+                        <div class="finance">
+                            <p>총 결제금액</p>
+                            <p>250,000원</p>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="second__step">
+                        <h4>결제 수단을 선택해주세요.</h4>
+                        <div class="payment__way">
+                            <a href="#">Paypal</a>
+                            <a href="#">신용카드</a>
+                            <a href="#">카카오페이</a>
+                            <a href="#">네이버페이</a>
+                            <a href="#">토스</a>
+                            <a href="#">기타결제수단</a>
+                        </div>
+                    </div>
+                    <div class="third__step d-flex justify-content-between align-items-center">
+                        <img src="assets/images/icon/tik.png" alt="icon">  <p>위 구매조건을 확인, 결제진행에 동의합니다.</p>
+                    </div>
+
+
+                 </div>
+
+                 <form class="login__form d-flex justify-content-between align-items-center">
+                    <button style="width: 27%; background-color: #000; color: #fff;"> <img src="assets/images/icon/arrow-left-white.png" alt="icon"> </button> 
+                    <button style="width: 68%;" class="signUp_btn d-flex justify-content-between align-items-center ps-3 pe-3 mt-0">Next <img src="assets/images/icon/arrow_right.png" alt="image"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- B12 section end here -->
+
+
+    <!-- B1 section start here -->
+    <div class="B1__section">
+        <div class="container">
+            <div class="B1__inner">
+                <div class="B1__main">
+                    <img src="assets/images/icon/round_tik.png" alt="image">
+                    <h4>피드백 요청 완료</h4>
+                    <p>탤런트의 메시지 전달 완료 시 핸드폰으로 알려드려요.
+                        메시지 요청은 7일간 유효하며, 이후 만료될 수 있습니다.
+                        탤런트의 일정 또는 사정에 따라 요청이 취소될 수 있습니다.
+                        요청 만료 또는 취소 시 자동으로 결제가 취소됩니다.
+                    </p>
+                </div>
+                <form class="login__form">
+                    <button class="signUp_btn d-flex justify-content-between align-items-center ps-3 pe-3 mt-0">Next <img src="assets/images/icon/arrow_right.png" alt="image"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- B1 section start here -->
+
+    <!-- B2 section start here -->
+    <div class="B2__section">
+        <div class="container">
+            <div class="B2__inner">
+                <div class="B1__main">
+                    <img src="assets/images/icon/round_cross.png" alt="image">
+                    <h4>피드백 요청 완료</h4>
+                    <p>탤런트의 메시지 전달 완료 시 핸드폰으로 알려드려요.
+                        메시지 요청은 7일간 유효하며, 이후 만료될 수 있습니다.
+                        탤런트의 일정 또는 사정에 따라 요청이 취소될 수 있습니다.
+                        요청 만료 또는 취소 시 자동으로 결제가 취소됩니다.
+                    </p>
+                </div>
+                <form class="login__form">
+                    <button class="signUp_btn d-flex justify-content-between align-items-center ps-3 pe-3 mt-0">Next <img src="assets/images/icon/arrow_right.png" alt="image"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- B2 section start here -->
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -47,6 +47,7 @@ li{
     --p--white: #fff;
     --p--dark: #000000;
     --p--bg: #f5f5f5;
+    --p--border: #373737;
     --p--home: #eeeeee;
     --p--tran1: 0.2s ease-in-out;
     --p--font1:  Arial, Helvetica, sans-serif;
@@ -57,6 +58,10 @@ li{
 /* =====header section start here===== */
 .header__section{
     padding: 33px 30px 40px;
+}
+
+.sticky{
+    display: none;
 }
 
 .header__inner{
@@ -875,7 +880,7 @@ button.accordion-button {
     height: 85vh;
 }
 
-form.login__form {
+form.login__form, #request__process {
     max-width: 360px;
     margin: auto;
     padding: 16px;
@@ -1279,4 +1284,235 @@ button.accordion-button.FAQ__btn.collapsed, button.accordion-button.FAQ__btn {
         justify-content: center;
     }
 }
+
+
+
+
+
+
+
+
+
+/* =====Request Process css start here===== */
+form.process__form, #request__process{
+    text-align: unset;
+}
+
+form.process__form label, .feedback p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.feedback p{
+    margin: 40px 0 20px;
+}
+
+.feedback__pill a {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--p--border);
+    display: inline-block;
+    border: 1px solid  var(--p--border);
+    padding: 4px 14px;
+    margin-bottom: 9px;
+    border-radius: 20px;
+}
+
+.feedback__pill a:first-child {
+    margin-right: 10px;
+}
+
+.request__content .title h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.request__content .title {
+    margin-bottom: 40px;
+}
+
+.request__content .content h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.request__content .content {
+    margin-bottom: 20px;
+}
+
+.request__content .content:nth-child(3){
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.upload__form [type="file"] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+  }
+
+  [type="file"] + label {
+    background: #e3e3e3;
+    border: none;
+    border: 1px dashed #AAAAAA;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 520px;
+    max-width: 328px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper textarea#question {
+    outline: none;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #AAAAAA;
+    width: 328px;
+    height: 140px;
+}
+
+form.login__form.process__form.upload__form label {
+    display: flex;
+    flex-direction: column;
+}
+
+form.login__form.process__form.upload__form label p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #007AFF;
+}
+
+form.login__form.next__button{
+    margin: unset;
+    margin-left: auto !important;
+}
+
+@media screen and (max-width: 767px) {
+    form.login__form.next__button{
+        margin: auto !important;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    /* [type="file"] + label{
+        width: 100%;
+    } */
+
+    .wrapper textarea#question{
+        width: 100%;
+    }
+}
+
+.play__payment {
+    height: 520px;
+    max-width: 328px;
+}
+
+.play__payment img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.request__content.payment__content .content:nth-child(3) {
+    margin-bottom: 20px;
+}
+
+
+/* =====Request Process css end here===== */
+
+/* B12 */
+.B12__finance {
+    max-width: 328px;
+    margin: auto;
+}
+
+.B12__finance .finance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color:  var(--p--border);
+}
+
+.B12__finance h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.second__step .payment__way {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.second__step .payment__way a {
+    width: 103px;
+    padding: 14px 0;
+    text-align: center;
+    border: 1px solid  var(--p--border);
+    margin-bottom: 8px;
+    color:  var(--p--border);
+    opacity: 0.4;
+}
+
+.second__step .payment__way a:hover{
+    opacity: 1;
+}
+
+.second__step {
+    margin: 60px 0;
+}
+
+.third__step p {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 375px) {
+    .second__step .payment__way{
+        justify-content: space-evenly;
+    }
+}
+
+/* B12 */
+
+
+/* B1 */
+.B1__main {
+    max-width: 328px;
+    margin: auto;
+    text-align: center;
+    font-family: var(--p--font1);
+}
+
+.B1__main h4 {
+    margin: 24px 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.B1__main p {
+    font-size: 12px;
+    font-weight: 500;
+}
+/* B1 */
 
