@@ -1399,10 +1399,10 @@ form.login__form.process__form.upload__form label p {
     color: #007AFF;
 }
 
-form.login__form.next__button{
+/* form.login__form.next__button{
     margin: unset;
     margin-left: auto !important;
-}
+} */
 
 @media screen and (max-width: 767px) {
     form.login__form.next__button{
@@ -1423,6 +1423,7 @@ form.login__form.next__button{
 .play__payment {
     height: 520px;
     max-width: 328px;
+    margin: auto;
 }
 
 .play__payment img{
@@ -1463,6 +1464,12 @@ form.login__form.next__button{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+    .request__content.payment__content {
+        margin-top: 40px;
+    }
 }
 
 .second__step .payment__way a {
