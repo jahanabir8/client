@@ -256,7 +256,7 @@ ul.tab__inner li:first-child{
     border-radius: 20px;
 }
 /* --- */
-.card__box.music__box .box__content {
+ .box__content {
     position: absolute;
     bottom: 46px;
     left: 15px;
@@ -265,37 +265,37 @@ ul.tab__inner li:first-child{
     font-family: var(--p--font1);
 }
 
-.card__box.music__box .box__content .box__top{
+ .box__content .box__top{
     margin-bottom: 10px;
 }
 
-.card__box.music__box .box__content .box__top span {
+ .box__content .box__top span {
     padding: 4px 10px;
     border: 1px solid var(--p--white);
     border-radius: 50px;
     font-size: 12px;
 }
 
-.card__box.music__box .box__content h3 {
+ .box__content h3 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 3px;
 }
 
-.card__box.music__box .box__content h4{
+ .box__content h4{
     font-size: 16;
     font-weight: 700;
     margin-bottom: 3px;
 }
 
-.card__box.music__box .box__content p{
+ .box__content p{
     font-size: 12px;
     font-family: inherit;
     line-height: 22px;
     text-transform: uppercase;
 }
 
-.card__box.music__box .box__content a {
+ .box__content a {
     font-size: 16px;
     color: #000;
     background: #fff;
@@ -369,11 +369,11 @@ ul.tab__inner li:first-child{
 
 @media screen and (max-width: 424px) {
 
-    .card__box.music__box .box__content {
+     .box__content {
         bottom: 15px;
     }
 
-    .card__box.music__box .box__content a{
+     .box__content a{
         font-size: 14px;
     }
 
@@ -1528,5 +1528,34 @@ form.login__form.process__form.upload__form label p {
 .card__box.music__box.tablet__box .box__content{
     bottom: 20px;
 }
+
+.card__box.music__box.tablet__box{
+    max-width: 590px;
+}
+
+.card__box.music__box.tablet__box:first-child{
+    margin-right: 20px;
+}
+
+.box__content.box__outter {
+    position: unset;
+    display: none;
+}
+
+.box__content.box__inner{
+    position: unset;
+}
+
+.box__content.box__inner h3 {
+    font-size: 16px;
+}
+
+.card__box.music__box.optional__box.tab__inner {
+    width: 287px;
+    height: unset;
+}
+
+
+
 /* tablet page start */
 
