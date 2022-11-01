@@ -1523,3 +1523,10 @@ form.login__form.process__form.upload__form label p {
 }
 /* B1 */
 
+
+/* tablet page start */
+.card__box.music__box.tablet__box .box__content{
+    bottom: 20px;
+}
+/* tablet page start */
+
